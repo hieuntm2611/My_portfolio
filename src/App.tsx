@@ -5,6 +5,8 @@ import { mergeStyles } from '@fluentui/react/lib/Styling';
 import './App.scss';
 import { FontIcon } from '@fluentui/react/lib/Icon';
 import { Image, ImageFit } from '@fluentui/react/lib/Image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 const boldStyle: Partial<ITextStyles> = { root: { fontWeight: FontWeights.semibold } };
@@ -53,7 +55,6 @@ export const App: React.FunctionComponent = () => {
               <FontIcon iconName="GitGraph" className={iconClass} />
             </a>
             <a href='https://github.com/hieuntm2611'>              
-              <FontIcon iconName="GitGraph" className={iconClass} />
             </a>
             </Stack>
           </Stack>
