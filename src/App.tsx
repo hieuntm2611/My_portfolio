@@ -1,12 +1,9 @@
 import * as React from 'react';
-import { IIconProps, Stack, Text, Link, FontWeights, IStackTokens, IStackStyles, ITextStyles } from '@fluentui/react';
-import { initializeIcons } from '@fluentui/font-icons-mdl2';
-import { mergeStyles } from '@fluentui/react/lib/Styling';
+import { Stack, Text, Link, FontWeights, IStackTokens, IStackStyles, ITextStyles } from '@fluentui/react';
 import './App.scss';
-import { FontIcon } from '@fluentui/react/lib/Icon';
 import { Image, ImageFit } from '@fluentui/react/lib/Image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { FaGithub, FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { GiSunflower } from 'react-icons/gi';
 
 
 const boldStyle: Partial<ITextStyles> = { root: { fontWeight: FontWeights.semibold } };
@@ -19,19 +16,14 @@ const stackStyles: Partial<IStackStyles> = {
     color: '#ffffff',
   },
 };
-const iconClass = mergeStyles({
-  fontSize: 30,
-  marginTop: 0,
-});
 
 
 export const App: React.FunctionComponent = () => {
-  initializeIcons();
   return (
     <Stack>
       <Stack className='header'>
         <Stack className='header__home'>
-          <FontIcon iconName="Home" className={iconClass} />
+          <GiSunflower className='home'/>
           <Link className='header__homebtn' href="#">
             Nguyễn Trương Minh Hiếu
           </Link>
@@ -51,11 +43,15 @@ export const App: React.FunctionComponent = () => {
             <Text className='big-text text-blue'>Nguyễn Trương Minh Hiếu</Text>
             <Text className='big-text'>Developer in Ha Noi, Viet Nam</Text>
             <Stack className='link'>
-            <a href='https://github.com/hieuntm2611'>
-              <FontIcon iconName="GitGraph" className={iconClass} />
-            </a>
-            <a href='https://github.com/hieuntm2611'>              
-            </a>
+              <a href='https://www.facebook.com/minhhieu2611/'>
+                <FaFacebook className='icon--large blue'/>
+              </a>
+              <a href='https://github.com/hieuntm2611'>
+                <FaGithub className='icon--large blue' />
+              </a>
+              <a href='https://www.linkedin.com/in/hi%E1%BA%BFu-nguy%E1%BB%85n-tr%C6%B0%C6%A1ng-minh-18a79a247/'>
+                <FaLinkedin className='icon--large blue'/>
+              </a>
             </Stack>
           </Stack>
           <Stack className='main__head--right'>
@@ -84,10 +80,24 @@ export const App: React.FunctionComponent = () => {
             <Text className='normal-text'>Tôi mong muốn trở thành nhà phát triển của công ty với mục tiêu thiết kế, xây dựng trang web và ứng dụng, đồng thời mong muốn được học hỏi, trau dồi kỹ năng trong môi trường làm việc chuyên nghiệp và thông qua các dự án thực tế.</Text>
           </Stack>
         </Stack>
+        <Stack className='main__skill'>
+
+        </Stack>
       </Stack>
       <Stack className='footer'>
         <Stack className='footer__link'>
-
+          <a href='https://www.facebook.com/minhhieu2611/'>
+            <FaFacebook className='icon--large' />
+          </a>
+          <a href='https://www.youtube.com/channel/UCYDlKgY7UfbHxC1X6hv8FwA'>
+              <FaYoutube className='icon--large'/>
+          </a>
+          <a href='https://github.com/hieuntm2611'>
+              <FaGithub className='icon--large'/>
+          </a>
+          <a href='https://www.instagram.com/hieuntm2611/'>
+              <FaInstagram className='icon--large'/>
+          </a>
         </Stack>
         <Text className='powered'>
           Powered by <a className='linkfb' href='https://www.facebook.com/minhhieu2611/'>Nguyen Truong Minh Hieu </a>

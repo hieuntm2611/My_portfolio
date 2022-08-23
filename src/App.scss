@@ -1,3 +1,9 @@
+.icon--large{
+  font-size: 40px;
+  margin: 15px;
+  color: black;
+}
+
 .header {
   background-color: rgb(233, 237, 255);
   width: 100%;
@@ -13,7 +19,9 @@
 
   .header__home {
     flex-direction: row;
-
+    .home{
+      font-size: 30px;
+    }
     .header__homebtn {
       color: black !important;
       font-size: 20px;
@@ -23,9 +31,11 @@
       font-weight: 600;
     }
   }
-  .header__choice{
+
+  .header__choice {
     flex-direction: row;
     align-items: center;
+
     .header__choice--item {
       color: black !important;
       font-size: 20px;
@@ -35,61 +45,78 @@
     }
   }
 }
+.blue{
+  color: rgb(43, 49, 82);
+}
 
 .main {
   margin-top: 50px !important;
   width: 100%;
-  .main__head{
+
+  .main__head {
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: -50px;
     height: 880px;
-    .main__head--left{
+
+    .main__head--left {
       align-items: flex-end;
       justify-content: center;
-      .text-blue{
+
+      .text-blue {
         color: rgb(39, 76, 243);
       }
-      .big-text{
+
+      .big-text {
         font-size: 40px;
         font-weight: 500;
       }
-      .link{
+
+      .link {
         flex-direction: row;
       }
     }
-    .main__head--right{
+
+    .main__head--right {
       align-items: center;
       justify-content: center;
-      .img__first{
+
+      .img__first {
         border-radius: 50%;
       }
     }
   }
-  .main__second{
+
+  .main__second {
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: -50px;
     height: 880px;
-    .main__second--left{
+
+    .main__second--left {
       align-items: center;
       justify-content: center;
-      .img__first{
+
+      .img__first {
         border-radius: 5%;
       }
     }
-    .main__second--right{
+
+    .main__second--right {
       align-items: flex-start;
       justify-content: center;
       width: 40%;
-      .text-blue{
+
+      .text-blue {
         color: rgb(59, 95, 253);
       }
-      .big-text{
+
+      .big-text {
         font-size: 40px;
         font-weight: 500;
       }
-      .normal-text{
+
+      .normal-text {
         margin-top: 5px;
         font-size: 20px;
         text-align: justify;
@@ -97,13 +124,18 @@
     }
   }
 }
-.footer{
-  height: 100px;
+
+.footer {
   background-color: rgb(233, 237, 255);
-  .powered{
+  .footer__link{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .powered {
     font-size: 30px;
     text-align: center;
-    .linkfb{
+
+    .linkfb {
       color: black;
     }
   }
